@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { TestsComponent } from './pages/tests/tests.component';
 import { NewTestComponent } from './pages/new-test/new-test.component';
+import { UpdateTestComponent } from './pages/update-test/update-test.component';
 
 const routes : Routes = [
   {
@@ -9,6 +10,9 @@ const routes : Routes = [
   },
   {
     path: 'new', component: NewTestComponent
+  },
+  {
+    path: 'update', component: UpdateTestComponent
   },
   {
     path: '***', redirectTo: 'home'

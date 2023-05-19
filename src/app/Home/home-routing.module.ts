@@ -4,7 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes : Routes = [
   {
-    path: 'consultas', component: HomeComponent
+    path: '', component: HomeComponent
   },
   {
     path: '**', redirectTo: 'home'

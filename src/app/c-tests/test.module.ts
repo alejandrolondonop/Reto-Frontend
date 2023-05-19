@@ -5,6 +5,7 @@ import { CommonModule } from '@angular/common';
 import { TestRoutingModule } from './test-routing.module';
 import { TestTableComponent } from './components/test-table/test-table.component';
 import { NewTestComponent } from './pages/new-test/new-test.component';
+import { UpdateTestComponent } from './pages/update-test/update-test.component';
 
 
 
@@ -18,7 +19,8 @@ import { NewTestComponent } from './pages/new-test/new-test.component';
   declarations: [
     TestsComponent,
     TestTableComponent,
-    NewTestComponent
+    NewTestComponent,
+    UpdateTestComponent
   ],
   providers: [],
 })

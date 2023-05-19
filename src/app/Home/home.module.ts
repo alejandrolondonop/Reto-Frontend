@@ -5,6 +5,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { AppRoutingModule } from '../app-routing.module';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeTableComponent } from './components/home-table/home-table.component';
+import { SearchByAffiliateComponent } from './components/search-by-affiliate/search-by-affiliate.component';
+import { SearchByDateComponent } from './components/search-by-date/search-by-date.component';
+
 
 
 
@@ -22,6 +25,8 @@ import { HomeTableComponent } from './components/home-table/home-table.component
   declarations: [
     HomeComponent,
     HomeTableComponent,
+    SearchByAffiliateComponent,
+    SearchByDateComponent,
   ],
   providers: [],
 })

@@ -6,6 +6,7 @@ import { SharedModule } from '../shared/shared.module';
 import { AppoinmentsRoutingModule } from './appoinments-routing.module';
 import { AppoinmentsTableComponent } from './components/appoinments-table/appoinments-table.component';
 import { NewAppoinmentComponent } from './pages/new-appoinment/new-appoinment.component';
+import { UpdateAppoinmentComponent } from './pages/update-appoinment/update-appoinment.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { NewAppoinmentComponent } from './pages/new-appoinment/new-appoinment.co
   declarations: [
     AppoinmentsComponent,
     AppoinmentsTableComponent,
-    NewAppoinmentComponent
+    NewAppoinmentComponent,
+    UpdateAppoinmentComponent
   ],
   providers: [],
 })

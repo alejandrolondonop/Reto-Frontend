@@ -11,7 +11,7 @@ import { Test } from '../../interfaces/test';
 export class TestsComponent implements OnInit {
   public title: string = 'Pruebas'
   public btnText: string = 'Nueva Prueba'
-  public redirectTo: string = ''
+  public redirectTo: string = '/tests/new'
 
   public tests: Test[] = []
   constructor(private testService: TestServiceService){}
