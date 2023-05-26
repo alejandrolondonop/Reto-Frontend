@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AffiliatesComponent } from './pages/affiliates/affiliates.component';
 import { NewAffiliateComponent } from './pages/new-affiliate/new-affiliate.component';
 import { UpdateAffiliateComponent } from './pages/update-affiliate/update-affiliate.component';
+import { DeleteAffiliateComponent } from './pages/delete-affiliate/delete-affiliate.component';
 
 const routes: Routes = [
   {
@@ -12,7 +13,10 @@ const routes: Routes = [
     path: 'new', component: NewAffiliateComponent
   },
   {
-    path: 'update', component: UpdateAffiliateComponent
+    path: 'update/:id', component: UpdateAffiliateComponent
+  },
+  {
+    path: 'delete/:id', component: DeleteAffiliateComponent
   },
   {
     path: '***', redirectTo: 'home'

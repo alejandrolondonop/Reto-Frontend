@@ -6,6 +6,10 @@ import { TestRoutingModule } from './test-routing.module';
 import { TestTableComponent } from './components/test-table/test-table.component';
 import { NewTestComponent } from './pages/new-test/new-test.component';
 import { UpdateTestComponent } from './pages/update-test/update-test.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../material/material.module';
+import { DeleteTestComponent } from './pages/delete-test/delete-test.component';
+
 
 
 
@@ -13,14 +17,17 @@ import { UpdateTestComponent } from './pages/update-test/update-test.component';
   imports: [
     SharedModule,
     CommonModule,
-    TestRoutingModule
+    TestRoutingModule,
+    ReactiveFormsModule,
+    MaterialModule
   ],
   exports: [],
   declarations: [
     TestsComponent,
     TestTableComponent,
     NewTestComponent,
-    UpdateTestComponent
+    UpdateTestComponent,
+    DeleteTestComponent,
   ],
   providers: [],
 })

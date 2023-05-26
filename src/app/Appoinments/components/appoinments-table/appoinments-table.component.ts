@@ -8,6 +8,8 @@ import { Appoinment } from '../../interfaces/appoinments';
   ]
 })
 export class AppoinmentsTableComponent {
+  public pathUpdate = '/appoinments/update'
+  public pathDelete = '/appoinments/delete'
 
   @Input()
   public appoinments: Appoinment[] = []

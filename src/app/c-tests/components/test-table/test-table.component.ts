@@ -11,6 +11,8 @@ export class TestTableComponent {
 
 @Input()
 public tests: Test[] = []
+public pathUpdate = '/tests/update'
+public pathDelete = '/tests/delete'
 }
 
 

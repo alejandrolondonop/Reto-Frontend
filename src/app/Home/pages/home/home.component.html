@@ -1,5 +1,8 @@
 <shared-header [title]="title"></shared-header>
 <div class="container d-flex">
   <app-search-by-date></app-search-by-date>
-  <app-search-by-affiliate></app-search-by-affiliate>
+  <app-search-by-affiliate (optionSelected)="searchAffiliate($event)"></app-search-by-affiliate>
 </div>
+
+  <home-table [affiliates]="affiliates" [appoinments]="appoinments" ></home-table>
+

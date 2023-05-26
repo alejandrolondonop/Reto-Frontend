@@ -4,13 +4,17 @@ import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './components/header/header.component';
 import { AddBtnComponent } from './components/add-btn/add-btn.component';
+import { DialogDeleteComponent } from './components/dialog-delete/dialog-delete.component';
+import { MaterialModule } from '../material/material.module';
 
 
 
 @NgModule({
   imports:
   [RouterModule,
-  CommonModule],
+  CommonModule,
+  MaterialModule
+],
   exports: [
     NavBarComponent,
     HeaderComponent,
@@ -19,7 +23,8 @@ import { AddBtnComponent } from './components/add-btn/add-btn.component';
   declarations: [
     NavBarComponent,
     HeaderComponent,
-    AddBtnComponent
+    AddBtnComponent,
+    DialogDeleteComponent
   ],
   providers: [],
 })

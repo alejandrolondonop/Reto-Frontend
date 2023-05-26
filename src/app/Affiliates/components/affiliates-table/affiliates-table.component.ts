@@ -10,4 +10,7 @@ import { Affiliates } from '../../interfaces/affiliate';
 export class AffiliatesTableComponent {
   @Input()
   public affiliates : Affiliates[] = [];
+
+  public pathUpdate = '/affiliates/update'
+  public pathDelete = '/affiliates/delete'
 }

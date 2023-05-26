@@ -6,6 +6,9 @@ import { AffiliatesRoutingModule } from './affiliates-routing.module';
 import { AffiliatesTableComponent } from './components/affiliates-table/affiliates-table.component';
 import { NewAffiliateComponent } from './pages/new-affiliate/new-affiliate.component';
 import { UpdateAffiliateComponent } from './pages/update-affiliate/update-affiliate.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MaterialModule } from '../material/material.module';
+import { DeleteAffiliateComponent } from './pages/delete-affiliate/delete-affiliate.component';
 
 
 
@@ -13,10 +16,12 @@ import { UpdateAffiliateComponent } from './pages/update-affiliate/update-affili
   imports: [
     CommonModule,
     SharedModule,
-    AffiliatesRoutingModule
+    AffiliatesRoutingModule,
+    ReactiveFormsModule,
+    MaterialModule,
   ],
   exports: [],
-  declarations: [AffiliatesComponent, AffiliatesTableComponent, NewAffiliateComponent, UpdateAffiliateComponent],
+  declarations: [AffiliatesComponent, AffiliatesTableComponent, NewAffiliateComponent, UpdateAffiliateComponent, DeleteAffiliateComponent],
   providers: [],
 })
 export class AffiliatesModule { }
