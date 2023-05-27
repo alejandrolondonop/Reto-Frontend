@@ -50,6 +50,14 @@ export class AppoinmentsService {
     );
   }
 
+  searchAppoinmentByDate(date: string): Observable<Appoinment[]>{
+    return this.httpClient.get<Appoinment[]>(`${this.apiURL}/appoinments/date/${date}`)
+    .pipe(
+      catchError(error => of([]) )
+    );
+  }
+
+
   addAppoinmet(appoinment: Appoinment) : Observable<Appoinment>{
     return this.httpClient.post<Appoinment>(`${this.apiURL}/appoinments`, appoinment)
   }

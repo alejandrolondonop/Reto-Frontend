@@ -9,6 +9,7 @@ import { SearchByAffiliateComponent } from './components/search-by-affiliate/sea
 import { SearchByDateComponent } from './components/search-by-date/search-by-date.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MaterialModule } from '../material/material.module';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -20,7 +21,8 @@ import { MaterialModule } from '../material/material.module';
     CommonModule,
     HomeRoutingModule,
     SharedModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule,
 
 
   ],

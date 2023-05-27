@@ -9,7 +9,8 @@ import { catchError, of } from 'rxjs';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+
 })
 export class HomeComponent {
   public title: string = 'Consultas';
@@ -19,7 +20,7 @@ export class HomeComponent {
 
   public appoinments: Appoinment[] = [];
 
-
+  public idsAffiliates: number[] = []
 
   constructor(
     private affiliatesService: AffiliatesServiceService,
@@ -38,5 +39,18 @@ export class HomeComponent {
     })
 
   }
+
+  searchAppointments(date: string){
+    this.appoinmentService.searchAppoinmentByDate(date).subscribe(appoinment =>{
+      this.idsAffiliates =  appoinment.map(obj => obj.idAffiliates )
+      this.idsAffiliates.forEach(id => {
+        this.searchAffiliate(id)
+      })
+    }
+    )}
+
+
+
+
 
 }

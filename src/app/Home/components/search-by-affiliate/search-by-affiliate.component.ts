@@ -14,6 +14,7 @@ export class SearchByAffiliateComponent implements OnInit {
 
   constructor(private affiService: AffiliatesServiceService,
     private elementRef: ElementRef){}
+    
   ngOnInit(): void {
     this.affiService.searchAffiliates().subscribe(affiliate=>{
       this.affiliates = affiliate

@@ -1,6 +1,6 @@
 <shared-header [title]="title"></shared-header>
 <div class="container d-flex">
-  <app-search-by-date></app-search-by-date>
+  <app-search-by-date (optionSelected)="searchAppointments($event)"></app-search-by-date>
   <app-search-by-affiliate (optionSelected)="searchAffiliate($event)"></app-search-by-affiliate>
 </div>
 
